@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServicebmTest {
 
     @ParameterizedTest
-    @CsvSource(value = {"'test1',200,300,3",
-            "'test2',100,200,5"})
+    @CsvSource(value = {"'test1',400,500,3",
+            "'test2',600,700,2"})
     void shouldCalculate(String testName, int lowValue, int upValue, int expected) {
         SQRServicebm service = new SQRServicebm();
 
